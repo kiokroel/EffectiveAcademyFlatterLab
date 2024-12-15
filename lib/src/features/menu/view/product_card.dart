@@ -21,13 +21,12 @@ class _ProductCardState extends State<ProductCard> {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          // Поле с изображением товара
           Container(
             height: 100,
             width: double.infinity,
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage(widget.product.imagePath), // Используем путь к изображению из продукта
+                image: AssetImage(widget.product.imagePath),
                 fit: BoxFit.contain,
               ),
               borderRadius: BorderRadius.circular(8),
